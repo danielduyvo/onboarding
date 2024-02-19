@@ -30,6 +30,7 @@ of features you expect from a text editor are present here, such as:
 * `⌘-C` for copy
 * `⌘-P` for paste
 * `⌘-S` for save
+* `Ctrl-Number` to switch tabs
 
 More options are available in the App menu at the top. Additional convenient
 features include:  

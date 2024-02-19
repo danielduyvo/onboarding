@@ -10,15 +10,21 @@ echo hello world
 
 * Programming essentials
     * Visual Studio Code
+        * Terminal
     * Git
     * R Studio
         * Tidyverse
     * Jupyter Notebook
 * Analyses
+    * Downloading data
+        * dbGaP
+        * Synapse
     * Quality control and pre-processing
         * Genotypes
             * plink
             * bcftools
+            * Imputation
+                * TOPMed and Michigan imputation server
         * RNAseq
             * Alignment with STAR
             * Pseudoalignment salmon
