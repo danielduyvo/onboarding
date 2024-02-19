@@ -59,10 +59,9 @@ window for you to control Visual Studio Code through.
 
 Entering `Terminal: Run Selected Text in Active Terminal` or selecting it from
 the search suggestions in the Command Palette will send the selected text to the
-terminal, or if there is no selected text, the current line.
+terminal. If there is no selected text, the current line is sent.
 
-![Terminal: Run Selected Text in Active
-Terminal](images/01_05_run_selected_text.png)
+![Terminal: Run Selected Text in Active Terminal](images/01_05_run_selected_text.png)
 
 ![Run: echo hello world](images/01_06_echo_hello_world.png)
 
@@ -88,7 +87,7 @@ needs and preferences.
 
 One last thing for getting started is setting up your editor to connect to
 remote servers such as Hoffman2 and Respublica. Visual Studio Code does not have
-remote access built in, but the `Marketplace` offers an extension that will add
+remote access built in, but the Marketplace offers an extension that will add
 that functionality. First, click the Extensions icon in the Activity Bar, which
 will bring up a search bar in the sidebar. Search for `Remote - SSH` and install
 the extension from Microsoft.  
