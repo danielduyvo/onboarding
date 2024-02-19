@@ -43,8 +43,8 @@ features include:
 
 Another useful function Visual Studio Code provides is the integrated terminal.
 You can bring up the Panel housing the terminal at the bottom of your screen by
-pressing ``Ctrl-```. This will open a terminal with the current working directory
-as the open folder. Pressing ``Ctrl-``` again will minimize the terminal and
+pressing ``Ctrl-` ``. This will open a terminal with the current working directory
+as the open folder. Pressing ``Ctrl-` `` again will minimize the terminal and
 return focus to the editor.  
 
 ![Terminal open in Panel](images/01_03_terminal_panel.png)
