@@ -77,8 +77,8 @@ Searching for `Terminal: Run Selected Text in Active Terminal` will bring up the
 function and its associated keyboard shortcuts. This function currently does not
 have any; we can add one by clicking the `+` icon on its row and typing in the
 desired keyboard shortcut. For me, I set it to `Ctrl-C Ctrl-C` (pressing the key
-combination twice), you can set it to whatever is most convenient and memorable
-for you.  
+combination twice) when `editorFocus` is `true`, you can set it to whatever is
+most convenient and memorable for you.  
 
 These editor features, specifically the Command Palette and the editor
 customization, are very powerful and can really improve your editor experience.

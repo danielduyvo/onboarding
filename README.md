@@ -10,8 +10,10 @@ echo hello world
 
 * Programming essentials
     * Visual Studio Code
-        * Terminal
-    * Git
+    * Terminal
+        * ssh
+        * screen
+        * git
     * R Studio
         * Tidyverse
     * Jupyter Notebook
