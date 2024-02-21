@@ -48,7 +48,10 @@ fasterq-dump \
 * skip-technical
     * Dump only biological reads, omitting the technical reads
         * Drops barcodes and primers
-    * Default behavior for `fasterq-dump`
+    * Default behavior for `fasterq-dump` (since `--split-3` does not include
+      technical reads)
+    * More information about technical reads on this 
+     [Biostars thread](https://www.biostars.org/p/12047/)
 * print-read-nr
     * Prints to stdout the number of spots and reads read and written
         * Matches `fastq-dump` default behavior
@@ -75,7 +78,7 @@ fastq-dump \
     * Dump only biological reads, omitting the technical reads
         * Drops barcodes and primers
 * readids
-    * Required option, alrternatives are origfmt, helicos, defline-seq and
+    * Required option, alternatives are origfmt, helicos, defline-seq and
       defline-qual
     * Append read ID after spot ID as 'accession.spot.readid' on defline
     * For paired-end reads, the sequences are appended with .1 and .2
