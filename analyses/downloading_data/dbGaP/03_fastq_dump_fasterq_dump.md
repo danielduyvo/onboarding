@@ -62,10 +62,6 @@ fasterq-dump \
 ```{bash}
 fastq-dump \
 --split-3 \
---skip-technical  \
---readids \
---read-filter pass \
---dumpbase \
 --clip \
 --outdir output_directory_for_fastqs/
 ```
@@ -74,21 +70,38 @@ fastq-dump \
     * Required option, alternatives include split-files and spot-group
     * Places left and right end reads into separate files, with a third file
       dedicated to unpaired reads
+* clip
+    * Remove adapter sequences from reads
+
+```{bash}
+# Edwards Lab recommended options
+fastq-dump \
+--split-3 \
+--skip-technical \
+--readids \
+--read-filter pass \
+--dumpbase \
+--clip \
+--outdir output_directory_for_fastqs/
+```
+
 * skip-technical
     * Dump only biological reads, omitting the technical reads
         * Drops barcodes and primers
+    * If you call `--split-3`, I'm pretty sure that the technical reads are
+      dropped already, since the 3 files correspond to biological reads only
 * readids
-    * Required option, alternatives are origfmt, helicos, defline-seq and
-      defline-qual
     * Append read ID after spot ID as 'accession.spot.readid' on defline
     * For paired-end reads, the sequences are appended with .1 and .2
     * You should definitely include this if using --split-spot or --split-files
       since the split sequences will otherwise be given the same ID
     * Supposedly this option is incompatible with BWA
+    * I don't think this is necessary when running with `--split-3` since the
+      reads are going into separate files anyways
 * read-filter pass
     * Required option, alternatives are reject, criteria and readacted
     * Only returns reads that pass filtering
 * dumpbase
     * Format sequence using base space (ACTG)
-* clip
-    * Remove adapter sequences from reads
+    * I think it would generally be safe to just assume that RNAseq reads will
+      be in base space (versus color space)
